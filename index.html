@@ -1,97 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fayez | Portfolio</title>
-  <meta name="description" content="Fayez — Web Developer, Data Analyst, and Graphic Designer.">
+  <title>Portfolio Fayez  Bayram</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navbar -->
-  <header>
-    <nav>
-      <h2 class="logo">Fayez<span class="accent">.</span></h2>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#web">Web Development</a></li>
-        <li><a href="#data">Data Analysis</a></li>
-        <li><a href="#design">Graphic Design</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <!-- ===== الهيدر ===== -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Fayez <span>Bayram</span></h1>
+      <nav class="nav">
+        <a href="#about">نبذة</a>
+        <a href="#skills">المهارات</a>
+        <a href="#contact">تواصل</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <img src="images/profile.jpg" alt="Fayez Photo" class="profile-pic" loading="eager">
-    <h1>Hello, I'm <span>Fayez</span></h1>
-    <p>Web Developer • Data Analyst • Graphic Designer</p>
-    <div class="cta">
-      <a class="btn" href="#web">View Web Projects</a>
-      <a class="btn ghost" href="#contact">Hire Me</a>
-    </div>
-  </section>
-
-  <!-- Data Analysis Section -->
-  <section id="data" class="section">
-    <h2>Data Analysis</h2>
-    <p class="lead">Python, Pandas, Matplotlib, Plotly</p>
-    <div class="cards">
-      <div class="card">
-        <h3>Sales Dashboard</h3>
-        <p>Interactive charts and KPIs for monthly performance.</p>
-        <a href="#" target="_blank">View Notebook</a>
+  <!-- ===== القسم الرئيسي ===== -->
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h2>أهلاً، أنا <span>فايز بيرم</span></h2>
+        <p>محلل بيانات ومصمم جرافيك ومهتم بتطوير الويب. أسعى دائمًا للجمع بين الأرقام والإبداع لتقديم حلول مبتكرة تضيف قيمة حقيقية.</p>
       </div>
-      <div class="card">
-        <h3>Customer Segmentation</h3>
-        <p>K-Means clustering with insights and visuals.</p>
-        <a href="#" target="_blank">View Notebook</a>
+      <div class="hero-img">
+        <!-- ضع صورتك الشخصية داخل مجلد images وسمها profile.jpg -->
+        <img src="images/profile.jpg" alt="صورة شخصية">
       </div>
     </div>
   </section>
 
-  <!-- Graphic Design Section -->
-  <section id="design" class="section">
-    <h2>Graphic Design</h2>
-    <p class="lead">Branding, Posters, Social Media</p>
-    <div class="gallery">
-      <img src="images/design1.jpg" alt="Design 1">
-      <img src="images/design2.jpg" alt="Design 2">
-      <img src="images/design3.jpg" alt="Design 3">
+  <!-- ===== المهارات ===== -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <h2 class="section-title">المهارات</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>تحليل البيانات 📊</h3>
+          <ul>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>Power BI</li>
+            <li>Machine Learning</li>
+            <li>Excel</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>التصميم 🎨</h3>
+          <ul>
+            <li>Photoshop</li>
+            <li>Illustrator</li>
+            <li>After Effects</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>تطوير الويب 💻</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Web Development Section -->
-  <section id="web" class="section">
-    <h2>Web Development</h2>
-    <p class="lead">HTML, CSS, JavaScript</p>
-    <div class="cards">
-      <div class="card">
-        <h3>Landing Page</h3>
-        <p>Responsive landing with animations and clean UI.</p>
-        <a href="#" target="_blank">View on GitHub</a>
-      </div>
-      <div class="card">
-        <h3>Portfolio Template</h3>
-        <p>Modern single-page site with smooth scroll.</p>
-        <a href="#" target="_blank">View on GitHub</a>
-      </div>
+  <!-- ===== تواصل ===== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">تواصل معي</h2>
+      <p>يمكنك التواصل معي عبر البريد الإلكتروني أو الواتس اب:</p>
+      <ul>
+        <li>📧 <a href="mailto:fayzomar908@gmail.com">fayzomar908@gmail.com</a></li>
+        <li>📱 <a href="https://wa.me/201010856679" target="_blank">01010856679</a></li>
+      </ul>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="section contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:youremail@gmail.com">youremail@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
-  </section>
-
-  <footer>
-    <p>© 2025 Fayez | All Rights Reserved</p>
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 جميع الحقوق محفوظة — فايز بيرم</p>
+    </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
