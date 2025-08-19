@@ -67,3 +67,37 @@ header { background:#222; position: sticky; top:0; z-index:100; box-shadow: 0 2p
 .skill-card li { padding:6px 0; }
 
 /* ===== Contact ===== */
+.contact {
+  padding: 70px 0;
+  background: #222;
+  color: #fff;
+  text-align: center; /* يخلي النص واللينكات في النص */
+}
+
+.contact h2 {
+  font-size: clamp(22px, 3.5vw, 32px);
+  margin-bottom: 24px;
+  color: #00d1b2;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column; /* يخلي العناصر تحت بعض */
+  gap: 12px;
+  align-items: center;   /* سنترة العناصر أفقيًا */
+  justify-content: center; /* سنترة العناصر رأسيًا */
+}
+
+.contact-info a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color .3s ease;
+}
+
+.contact-info a:hover {
+  color: #00d1b2;
+}
