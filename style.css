@@ -7,7 +7,33 @@ body { font-family: "Cairo", system-ui, -apple-system, Segoe UI, Roboto, sans-se
 /* ===== Navbar ===== */
 header { background:#222; position: sticky; top:0; z-index:100; box-shadow: 0 2px 8px rgba(0,0,0,.15); }
 .navbar { display:flex; justify-content:space-between; align-items:center; padding:14px 0; }
-.logo { color:#fff; font-weight:800; letter-spacing:.5px; }
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  gap: 10px; /* المسافة بين العناصر */
+}
+
+.logo-text {
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #00d1b2; /* لون متناسق مع الصفحة */
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.4); opacity: 0.7; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
 .nav-links { list-style:none; display:flex; gap:22px; }
 .nav-links a { color:#fff; text-decoration:none; font-weight:600; opacity:.9; }
 .nav-links a:hover { opacity:1; color:#00b894; }
