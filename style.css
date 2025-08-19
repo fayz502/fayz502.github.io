@@ -1,156 +1,113 @@
-/* ===== القواعد العامة ===== */
-* {
+body {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  font-family: 'Cairo', sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
 }
 
-body {
-  font-family: "Cairo", sans-serif;
-  line-height: 1.6;
-  background-color: #f9f9f9;
-  color: #333;
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
 }
 
 /* ===== الهيدر ===== */
-header {
-  background: #222;
-  color: #fff;
+.header {
+  background: #111;
   padding: 15px 0;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
 }
-
-nav {
-  width: 90%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav h1 {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-nav ul li a {
+.header .logo {
   color: #fff;
+  font-weight: 700;
+}
+.header .logo span {
+  color: #00b894;
+}
+.nav {
+  float: left;
+}
+.nav a {
+  color: #fff;
+  margin-left: 20px;
   text-decoration: none;
   transition: 0.3s;
 }
-
-nav ul li a:hover {
+.nav a:hover {
   color: #00b894;
 }
 
-/* ===== القسم الرئيسي (Hero Section) ===== */
+/* ===== القسم الرئيسي ===== */
 .hero {
   display: flex;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 80px 20px;
+  padding: 60px 0;
   background: linear-gradient(135deg, #00b894, #0984e3);
   color: #fff;
-  flex-direction: column;
-  gap: 30px;
 }
-
 .hero-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
+  align-items: center;
 }
-
-.hero-text h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
+.hero-text h2 span {
+  color: #ffeaa7;
 }
-
-.hero-text p {
-  max-width: 600px;
-  line-height: 1.8;
-  font-size: 1.1rem;
-}
-
 .hero-img img {
-  width: 180px;
+  width: 250px;
   border-radius: 50%;
   border: 4px solid #fff;
 }
 
-/* ===== الأقسام العامة ===== */
-section {
-  width: 90%;
-  margin: 60px auto;
-}
-
-h2 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-  text-align: center;
-  color: #222;
-}
-
 /* ===== المهارات ===== */
-.skills-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-}
-
-.skill {
-  background: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.skills {
+  padding: 60px 0;
   text-align: center;
-  transition: transform 0.3s;
 }
-
-.skill:hover {
-  transform: translateY(-5px);
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
 }
-
-.skill h3 {
-  margin-bottom: 10px;
+.skill-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.skill-card h3 {
+  margin-bottom: 15px;
   color: #00b894;
+}
+.skill-card ul {
+  list-style: none;
+  padding: 0;
+}
+.skill-card li {
+  padding: 5px 0;
 }
 
 /* ===== تواصل ===== */
-.contact-info {
+.contact {
+  background: #111;
+  color: #fff;
+  padding: 60px 0;
   text-align: center;
-  font-size: 1.1rem;
 }
-
-.contact-info p {
-  margin: 10px 0;
-}
-
-.contact-info a {
-  color: #0984e3;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.contact-info a:hover {
+.contact a {
   color: #00b894;
+  text-decoration: none;
+}
+.contact a:hover {
+  text-decoration: underline;
 }
 
 /* ===== الفوتر ===== */
-footer {
-  background: #222;
-  color: #fff;
-  text-align: center;
+.footer {
+  background: #000;
+  color: #aaa;
   padding: 15px 0;
-  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
 }
